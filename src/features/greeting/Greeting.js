@@ -11,7 +11,7 @@ export function Greeting() {
     if (messageStatus === "idle" && message === "") {
       dispatch(fetchMessage());
     }
-  }, [messageStatus, dispatch]);
+  }, [messageStatus, dispatch, message]);
 
   return (
     <div>
