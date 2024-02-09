@@ -1,5 +1,5 @@
 import React from 'react';
-import { Greeting } from './features/greeting/Greeting';
+import Greeting from './features/greeting/Greeting';
 
 function App() {
   return (

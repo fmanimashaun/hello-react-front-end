@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMessage } from './greetingSlice';
 
-export function Greeting() {
+function Greeting() {
   const dispatch = useDispatch();
   const message = useSelector((state) => state.greet.message);
   const messageStatus = useSelector((state) => state.greet.status);
@@ -20,3 +20,5 @@ export function Greeting() {
     </div>
   );
 }
+
+export default Greeting;
